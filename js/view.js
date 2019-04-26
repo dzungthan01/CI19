@@ -5,7 +5,7 @@ view.setMessage = (elementId, message) => {
     if (element) {
         element.innerText = message;
     }
-}
+};
 view.setActiveScreen = () => {    
     // const app = document.getElementById('app');
 
@@ -33,7 +33,7 @@ view.setActiveScreen = () => {
                 email,
                 password,
                 confirmPassword,
-            }
+            };
 
             controller.validateRegisterForm(registerInfo);
 

@@ -43,4 +43,4 @@ controller.validateRegisterForm = (registerInfo) => {
         view.setMessage('confirm-error-message',''); 
     }
 
-}
+};
