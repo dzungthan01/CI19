@@ -7,6 +7,8 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel='stylesheet' href='../css/style.css' />
   <title>Document</title>
+  <link rel='stylesheet' type='text/css' href='../css/register.css' />
+  <link rel='stylesheet' type='text/css' href='../css/style.css' />
 </head>
 <body>
   <div id='app'>
@@ -18,29 +20,31 @@
 
         <div id='register-form'>
           <form id='form-wrapper'>
-            <div class='input-wrapper'>
-              <input type='text' name='firstName' placeholder='First name' />
-              <div id='firstName-error-message'></div>
+            <div class='name-wrapper'>
+              <div class='input-wrapper'>
+                <input class='input' type='text' name='firstName' placeholder='First name' />
+                <div id='firstName-error-message' class='error'></div>
+              </div>
+            
+              <div class='input-wrapper'>
+               <input class='input' type='text' name='lastName' placeholder='Last name' />
+                <div id='lastName-error-message' class='error'></div>
+              </div>
             </div>
 
             <div class='input-wrapper'>
-              <input type='text' name='lastName' placeholder='Last name' />
-              <div id='lastName-error-message'></div>
-            </div>
-
-            <div class='input-wrapper'>
-              <input type='text' name='email' placeholder='Email address' />
-              <div id='email-error-message'></div>
+              <input class='input' type='text' name='email' placeholder='Email address' />
+              <div id='email-error-message' class='error'></div>
             </div>
             
             <div>
-              <input type='password' name='password' placeholder='Password' />
-              <div id='password-error-message'></div>
+              <input class='input' type='password' name='password' placeholder='Password' />
+              <div id='password-error-message' class='error'></div>
             </div>
             
             <div>
-              <input type='password' name='confirmPassword' placeholder='Confirm password' />
-              <div id='confirm-error-message'></div>
+              <input class='input' type='password' name='confirmPassword' placeholder='Confirm password' />
+              <div id='confirm-error-message' class='error'></div>
             </div>
             <input type='submit' value='Register' />
           </form>
@@ -56,3 +60,4 @@
   <script src='../js/view.js'></script>
 </body>
 </html>
+ 
